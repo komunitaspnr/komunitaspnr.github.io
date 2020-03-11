@@ -84,6 +84,23 @@
                             </span>
                         </p>
                     </div>
+                </li>
+                <li v-for="item in filteredItems">
+                    <img src="../assets/img/toko-baju-iqbal.png" width="100" height="100">
+                    <div class="">
+                        <p><b> Toko Baju Iqbal </b></p>
+                        <p>Pakaian anak, dewasa terlengkap!</p>
+                        <p>
+                            <span v-if="item.website"> 
+                                <a class="btn" href="https://api.whatsapp.com/send?phone=" target="_blank">Whatsapp 📞</a>
+                            </span>
+                            &nbsp;
+                            <span v-if="item.website"> 
+                                <a class="btn" href="https://selembarkertas.club" target="_blank">Blok OF-30</a>
+                            </span>
+                        </p>
+                    </div>
+                </li>
                 <br>
             </div>
 
