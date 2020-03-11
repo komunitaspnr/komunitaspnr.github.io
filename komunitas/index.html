@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masjid</title>
+    <meta name="description" content="Kumpulan hal positif yang ada di Makasasar. Apa saja hal menarik yang ada di kota Makassar?."/>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="icon" href="../favicon.ico">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+<body>
+
+    <div style="display: flex; justify-content: space-between; align-items: center;" >
+    <header>
+        <h1><img style="position: relative; top: 6px" src="../assets/img/logo.jpeg" height="40px"> Jelajahi Puri Nirwana!</h1>
+        <h3>Semua seputar hal positif yg ada di puri nirwana, mulailah menjelajah!</h3>
+    </header>
+    &emsp;
+    <header>
+    <div id="theme" class="toggle-container">
+      <div onclick="setDarkMode(true)" id="darkBtn" class="">
+        <label class="buka" id="switch" name="theme" /></label>
+      </div>
+      <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden">
+        <label class="tutup" id="switch" name="theme" /></label>
+        </div>
+    </div>
+    </header>
+    </div>
+
+    <div id="app">
+            <div id="tags">
+                <li class="btn is-success"> <a href="https://komunitaspnr.github.io/" >all</a></li>
+                <li class="btn is-success li-gelap"> <a href="https://komunitaspnr.github.io/komunitas" >komunitas</a></li>
+                <li class="btn is-success"> <a href="https://komunitaspnr.github.io/masjid/" >masjid</a></li>
+                <li class="btn is-success"> <a href="http://bit.ly/littlemks-form" >startup</a></li>
+                <li class="btn is-success"> <a href="https://komunitaspnr.github.io/bisnis/">bisnis</a></li>
+                <li class="btn is-success"> <a href="https://komunitaspnr.github.io/media/" >media</a></li>
+                <li class="btn is-success"> <a href="https://komunitaspnr.github.io/kesehatan/index.html" >kesehatan</a></li>
+                <li class="btn is-success"> <a href="https://forms.gle/C9fNAaPYxbV3vPCZ9" target="_blank">daftarkan bisnis anda +</a></li>
+            </div>
+
+            <!--div v-if="loading" class="loading">
+                <div class="lds-heart"><div></div></div>
+            </div-->
+
+            <div v-else id="products">
+                <li v-for="item in filteredItems">
+                    <img src="../assets/img/tq.png" width="100" height="100">
+                    <div class="">
+                        <p><b> Majlis Ta'lim Thibbil Qulub </b></p>
+                        <p>Komunitas Islami di masjid darussholihin</p>
+                        <p>
+                            <span v-if="item.instagram">
+                                <a class="btn" href="https://www.instagram.com/thibbil.qulub" target="_blank">Instagram 📷 </a>
+                            </span>
+                        </p>
+                    </div>
+                </li>
+                <br>
+            </div>
+
+            <div id="tags">
+                <li class="btn is-success li-gelap"> <a href="">Prev</a></li>
+                <li class="btn is-success li-gelap"> <a href="https://komunitaspnr.github.io/" >1</a></li>
+                <li class="btn is-success"> <a href="https://komunitaspnr.github.io/page2/" >2</a></li>
+                <li class="btn is-success"> <a href="https://komunitaspnr.github.io/3" >3</a></li>
+                <li class="btn is-success"> <a href="" >Next</a></li>
+            </div>
+    </div>
+
+    <footer>
+        <p align="center" >dikelola oleh <a href="https://fajarbaiz.com" target="_blank">Fajar Nugroho</a></p>
+    </footer>
+    
+<script type="text/javascript" src="https://fajarbaiz.com/assets/lib/js/darkmode.js"></script>
+</body>
+</html>
